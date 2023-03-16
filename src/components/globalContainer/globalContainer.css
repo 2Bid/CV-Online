@@ -1,0 +1,19 @@
+.globalContainer {
+    width: 100vw;
+    height: 100vh;
+    perspective: 1500px;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    background-color: #1a1a1a;
+    width: 70%;
+    height: 60%;
+    
+    margin: auto;
+    /* overflow: hidden; */
+    transform: rotateX(20deg) rotateY(20deg);
+    box-shadow: #1a1a1a 5px 5px 5px;
+    transition: 0.3s;
+}
