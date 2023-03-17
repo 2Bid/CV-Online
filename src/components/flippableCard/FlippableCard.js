@@ -5,6 +5,10 @@ import Card from '../card/Card';
 
 function FlippableCard() {
     const [showFront, setShowFront] = useState(true);
+
+    const flip = () => {
+        setShowFront((v) => !v);
+    }
     return(
         <div className="flippable-card-container">
             <CSSTransition
@@ -12,9 +16,9 @@ function FlippableCard() {
                 timeout={300}
                 classNames='flip'
             >
-                <Card onClick={() => {
-                    setShowFront((v) => !v);
-                }}/>
+                <>
+                <Card flip={flip}/>
+                </>
             </CSSTransition>
         </div>
     );

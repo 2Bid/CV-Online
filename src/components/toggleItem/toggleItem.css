@@ -1,0 +1,47 @@
+.exp__container .toggle__item:first-of-type .toggle__content{
+    height: 132px;
+}
+
+.toggle__item {
+    background-color: #4f6c99;
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: 1px 1px 20px #151628;
+}
+
+.toggle__item + .toggle__item {
+    margin-top: 10px;
+}
+
+.toggle__item.active .toggle__content{
+    display: block;
+}
+
+.toggle__title {
+    pointer-events: none;
+}
+
+.toggle__content {
+    height: 0;
+    transition: height 0.4s;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.toggle__content.active{
+    height: initial;
+}
+
+.toggle__date{
+    font-style: italic;
+    font-size: 14px;
+    display: block;
+}
+
+.toggle__list {
+    margin-top: 10px;
+}
+
+.toggle__list-item {
+    font-size: 14px;
+}

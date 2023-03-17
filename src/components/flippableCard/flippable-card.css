@@ -1,7 +1,14 @@
 .flippable-card-container {
-    /* === Sizing === */
-    height: 100%;
-    width: 100%;
-    color: #fff !important;
-  }
-  
+  height: 100%;
+  width: 100%;
+}
+
+.cta{
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: red;
+  z-index: 999;
+  height: 20px;
+  width: 20px;
+}
