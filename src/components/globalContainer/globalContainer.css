@@ -7,10 +7,10 @@
 }
 
 .container {
-    background-color: #1a1a1a;
-    width: 70%;
-    height: 60%;
-    
+    background-color: #232F3E;
+    width: 75%;
+    height: 70%;
+    max-width: 1100px;
     margin: auto;
     /* overflow: hidden; */
     transform: rotateX(20deg) rotateY(20deg);

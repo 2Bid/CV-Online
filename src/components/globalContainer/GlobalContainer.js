@@ -1,26 +1,35 @@
-import React, { useState } from 'react'
+import React, { useLayoutEffect, useRef, useState } from 'react'
 import FlippableCard from '../flippableCard/FlippableCard'
 
 import "./globalContainer.css"
 
 export default function GlobalContainer() {
 
+  const ref = useRef(null)
+
+  const [widthCard, setWidthCard] = useState(0);
+  const [heightCard, setHeightCard] = useState(0);
+
+  useLayoutEffect(()=>{
+    setWidthCard(ref.current.offsetWidth);
+    setHeightCard(ref.current.offsetHeight);
+  }, [])
+
   const [xPosition, setXPosition] = useState()
   const [yPosition, setYPosition] = useState()
 
-  // calculer l'angle par rapport a la distance 
-  const [angleX, setAngleX] = useState(25)
-  const [angleY, setAngleY] = useState(25)
+  const [angleX, setAngleX] = useState(0)
+  const [angleY, setAngleY] = useState(0)
 
   const handleMouseMove = (e) => {
-    const midCardX = e.target.clientWidth
-    const midCardY = e.target.clientHeight
-
     setXPosition(e.clientX)
     setYPosition(e.clientY)
 
-    setAngleX((xPosition - midCardX) / 50) 
-    setAngleY((yPosition - midCardY) / 25) 
+    const midCardX = widthCard / 1.35
+    const midCardY = heightCard / 1.35
+
+    setAngleX((yPosition - midCardY) / 45) 
+    setAngleY(-(xPosition - midCardX) / 90) 
   }
 
   const handleMouseOut = () => {
@@ -36,6 +45,7 @@ export default function GlobalContainer() {
     >
       <div
         className='container'
+        ref={ref}
         style={{
           transform:`rotateX(${angleX}deg) rotateY(${angleY}deg) scale(1.1)`
         }}
