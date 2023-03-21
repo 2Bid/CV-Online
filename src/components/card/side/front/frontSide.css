@@ -6,7 +6,7 @@
 
 .info__container{
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     gap: 30px;
 }
 
@@ -21,9 +21,11 @@ h3 {
     width: 25%;
     aspect-ratio: 1;
     border-radius: 50%;
+    margin-right: 10px;
     overflow: hidden;
     box-shadow: 1px 1px 20px #151628;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .img__container img {
@@ -39,15 +41,24 @@ h3 {
 }
 
 /* ABOUT */
+.about__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
 .about__container h1{
-    font-size: 29px;
+    font-size: 1.6em;
     top: -5px;
     position: relative;
 }
 
 .about__container p {
     font-weight: 600;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
 }
 
 .text-content {
@@ -63,6 +74,7 @@ h3 {
 .social__item {
     display: flex;
     gap: 10px;
+    width: fit-content;
 }
 
 .social__item:last-child{
@@ -127,6 +139,7 @@ h3 {
     border-radius: 15px;
     box-shadow: 1px 1px 20px #151628;
     transition: 0.1s;
+    cursor: pointer;
 }
 
 @media (hover: hover) {
@@ -143,4 +156,11 @@ h2 {
 
 .exp__container h2 {
     margin-top: 0;
+}
+
+
+/**************   RESPONSIVE  ***************/
+
+@media screen and (max-width : 1500px) {
+    
 }
