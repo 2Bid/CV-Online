@@ -7,6 +7,7 @@
     border-radius: 25px;
     padding: 10px;
     box-shadow: 1px 1px 20px #151628;
+    cursor: pointer;
 }
 
 .toggle__item + .toggle__item {
@@ -19,6 +20,7 @@
 
 .toggle__title {
     pointer-events: none;
+    transition: 0.3s;
 }
 
 .toggle__content {
@@ -26,10 +28,6 @@
     transition: height 0.4s;
     overflow: hidden;
     pointer-events: none;
-}
-
-.toggle__content.active{
-    height: initial;
 }
 
 .toggle__date{
@@ -44,4 +42,10 @@
 
 .toggle__list-item {
     font-size: 14px;
+}
+
+@media (hover: hover) {
+    .toggle__item:hover .toggle__title{
+        transform: translateX(15px);
+    }
 }

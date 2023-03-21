@@ -1,0 +1,44 @@
+.slick-dots li button:before{
+    color: #e3e5eb ;
+    opacity: 0.75 ;
+}
+
+.slick-dots li.slick-active button:before{
+    color: #f0a818 ;
+    opacity: 1 ;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    transition: all 0.3s;
+    box-shadow: 1px 1px 20px #272839;
+    border-radius: 50%;
+}
+
+.slick-prev:hover:before,
+.slick-next:hover:before{
+    color: #f0a818;
+}
+
+.slick-prev:before, .slick-next:before{
+    font-size: 25px ;
+}
+
+.slick-dots li button:before{
+    font-size: 8px ;
+    line-height: 26px ;
+}
+
+.slick-initialized .slick-slide{
+    display: flex;
+}
+
+.slick-slide {
+    height: 100%;
+    max-height: 230px;
+    min-height: 230px;
+}
+
+.slick-dots {
+    bottom: -30px;
+}

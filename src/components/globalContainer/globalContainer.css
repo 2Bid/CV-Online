@@ -7,13 +7,11 @@
 }
 
 .container {
-    background-color: #232F3E;
     width: 75%;
     height: 70%;
     max-width: 1100px;
     margin: auto;
     /* overflow: hidden; */
     transform: rotateX(20deg) rotateY(20deg);
-    box-shadow: #1a1a1a 5px 5px 5px;
     transition: 0.3s;
 }

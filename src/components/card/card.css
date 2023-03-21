@@ -4,10 +4,29 @@
   transform-style: preserve-3d;
   position: relative;
   border-radius: 5px;
-  border: 2px solid #e3e5eb;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+  background-color: transparent;
   user-select: none;
+  border: 2px solid #e3e5eb;
+  background-color: #232F3E;
+}
+
+.cta{
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 99;
+  padding: 0 0 5px 5px;
+  border-radius: 0 0 0 50%;
+  transition: 0.2s;
+  transform-origin: right top;
   cursor: pointer;
+}
+
+@media (hover: hover) {
+  .cta:hover{
+    transform: scale(1.25);
+    border-radius: 0 0 0 8px;
+  }
 }
 
 .cardSide__front,
@@ -20,10 +39,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+  background-color: #232F3E;
 }
 
 .cardSide__back {
-  background-color: #ffad66;
   transform: rotateY(180deg);
 }
 
