@@ -20,6 +20,7 @@
 .project__title {
     color: #e3e5eb;
     text-align: center;
+    font-size: 17px;
 }
 
 .project__description{
@@ -41,6 +42,7 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
+    box-shadow: 2px 2px 5px #151628;
 }
 
 .project__img{

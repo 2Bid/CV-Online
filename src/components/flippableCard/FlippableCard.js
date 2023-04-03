@@ -1,7 +1,8 @@
-import './flippable-card.css';
-import {CSSTransition} from 'react-transition-group';
-import {useState} from 'react';
+import { useState } from 'react';
+import { CSSTransition } from 'react-transition-group';
 import Card from '../card/Card';
+
+import './flippable-card.css';
 
 function FlippableCard() {
     const [showFront, setShowFront] = useState(true);
@@ -13,7 +14,7 @@ function FlippableCard() {
         <div className="flippable-card-container">
             <CSSTransition
                 in={showFront}
-                timeout={300}
+                timeout={400}
                 classNames='flip'
             >
                 <>
