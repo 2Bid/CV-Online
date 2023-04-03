@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import './skillCircle.css'
 
-export default function SkillCircle({name, percentage, isBackside}) {
+export const SkillCircle = forwardRef(({name, percentage}, ref) => {
 
-    if(isBackside){
+    let style
+    console.log(ref.current)
+
+    if(ref.current){
         const styleSheet = document.styleSheets[0];
         const keyframes= `
             @keyframes ${name} {
@@ -15,13 +18,12 @@ export default function SkillCircle({name, percentage, isBackside}) {
                 }
             }
         `
-
         styleSheet.insertRule(keyframes, styleSheet.cssRules.length);
-    }
 
-    let style = {
-        animation: `${name} ease-in-out 2s`,
-        transform: `rotate(${percentage * 1.8}deg)`
+        style = {
+            animation: `${name} ease-in-out 2s`,
+            transform: `rotate(${percentage * 1.8}deg)`
+        }
     }
 
   return (
@@ -41,4 +43,4 @@ export default function SkillCircle({name, percentage, isBackside}) {
         </div>
     </div>
   )
-}
+})
