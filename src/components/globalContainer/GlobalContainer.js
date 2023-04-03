@@ -50,7 +50,7 @@ export default function GlobalContainer() {
           transform:`rotateX(${angleX}deg) rotateY(${angleY}deg) scale(1.1)`
         }}
       >
-        <FlippableCard/>
+        <FlippableCard resetPos={handleMouseOut}/>
       </div>
     </div>
   )

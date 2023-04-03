@@ -4,7 +4,7 @@ import Card from '../card/Card';
 
 import './flippable-card.css';
 
-function FlippableCard() {
+function FlippableCard({resetPos}) {
     const [showFront, setShowFront] = useState(true);
 
     const flip = () => {
@@ -17,7 +17,7 @@ function FlippableCard() {
                 timeout={400}
                 classNames='flip'
             >
-                <Card flip={flip}/>
+                <Card flip={flip} resetPos={resetPos}/>
             </CSSTransition>
         </div>
     );

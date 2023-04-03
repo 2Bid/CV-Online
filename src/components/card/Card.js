@@ -6,12 +6,13 @@ import FlipArrow from "./flipArrow/FlipArrow";
 import "./card.css";
 import "./flip-transition.css";
 
-function Card({flip}) {
+function Card({flip, resetPos}) {
 
   const [isBackside, setIsBackside] = useState(false)
 
   function reverse(){
     flip()
+    resetPos()
     setIsBackside(!isBackside)
   }
 
