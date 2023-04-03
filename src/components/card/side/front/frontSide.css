@@ -25,7 +25,6 @@ h3 {
     overflow: hidden;
     box-shadow: 1px 1px 20px #151628;
     transition: 0.3s;
-    cursor: pointer;
 }
 
 .img__container img {
@@ -139,7 +138,6 @@ h3 {
     border-radius: 15px;
     box-shadow: 1px 1px 20px #151628;
     transition: 0.1s;
-    cursor: pointer;
 }
 
 @media (hover: hover) {

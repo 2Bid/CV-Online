@@ -10,25 +10,6 @@
   background-color: #232F3E;
 }
 
-.cta{
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 99;
-  padding: 0 0 5px 5px;
-  border-radius: 0 0 0 50%;
-  transition: 0.2s;
-  transform-origin: right top;
-  cursor: pointer;
-}
-
-@media (hover: hover) {
-  .cta:hover{
-    transform: scale(1.25);
-    border-radius: 0 0 0 8px;
-  }
-}
-
 .cardSide__front,
 .cardSide__back {
   height: 100%;

@@ -1,0 +1,47 @@
+.flipArrow__container{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    padding: 0 0 5px 5px;
+    border-radius: 0 0 0 50%;
+    transition: 0.2s;
+    transform-origin: right top;
+    cursor: pointer;
+}
+
+.flipArrow{
+    position: relative;
+    z-index: 9;
+    background-color: #232F3E;
+    width: 40px;
+    height: 40px;
+}
+
+.flipArrow__svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #232F3E;
+}
+
+.flipArrow__svg path {
+    z-index: -2;
+    position: relative;
+}
+
+.flipArrow__effectShader {
+    content: "";
+    position: absolute;
+    background-color: #f0a818;
+    inset: 0;
+    z-index: -1;
+}
+
+@media (hover: hover) {
+    .flipArrow__container:hover{
+        transform: scale(1.15);
+        border-radius: 0 0 0 8px;
+    }
+}
