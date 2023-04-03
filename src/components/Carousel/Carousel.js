@@ -8,9 +8,9 @@ import "slick-carousel/slick/slick-theme.css";
 import './carousel.css'
 
 // img projects
-import Reservia from './../images/reservia.png'
-import Ohmyfood from './../images/omf.png'
-import Gameon from './../images/GameOn.png'
+import Reservia from './../images/reservia.jpg'
+import Ohmyfood from './../images/omf.jpg'
+import Gameon from './../images/GameOn.jpg'
 import Kasa from './../images/kasa.jpg'
 import plats from './../images/plats.jpg'
 import SportSee from './../images/sportsee.jpg'

@@ -17,9 +17,7 @@ function FlippableCard() {
                 timeout={400}
                 classNames='flip'
             >
-                <>
                 <Card flip={flip}/>
-                </>
             </CSSTransition>
         </div>
     );
