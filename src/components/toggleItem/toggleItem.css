@@ -2,20 +2,55 @@
     height: 132px;
 }
 
-.toggle__item {
-    background-color: #4f6c99;
+.toggle__item__container{
+    max-height: 280px;
+    overflow-y: auto;
+    overflow-x: hidden;
     border-radius: 25px;
-    padding: 10px;
-    box-shadow: 1px 1px 20px #151628;
-    cursor: pointer;
 }
 
-.toggle__item + .toggle__item {
+/* width */
+.toggle__item__container::-webkit-scrollbar {
+    width: 3px;
+    margin-left: 5px;
+    position: relative;
+}
+
+/* Track */
+.toggle__item__container::-webkit-scrollbar-track {
+    background: #888;
+     border-radius: 5px;
+}
+
+/* Handle */
+.toggle__item__container::-webkit-scrollbar-thumb {
+    background: #f1f1f1;
+    transition: 0.1s;
+}
+
+/* Handle on hover */
+.toggle__item__container::-webkit-scrollbar-thumb:hover {
+background: #f0a818;
+}
+
+.toggle__item__container + .toggle__item__container {
     margin-top: 10px;
 }
 
-.toggle__item.active .toggle__content{
-    display: block;
+.toggle__item{
+    border-radius: 25px;
+    background-color: #4f6c99;
+    margin-right: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.toggle__item.active{
+    cursor: initial;
+}
+
+.toggle__item.active .toggle__title{
+    transform: translateX(10px);
 }
 
 .toggle__title {
@@ -46,6 +81,6 @@
 
 @media (hover: hover) {
     .toggle__item:hover .toggle__title{
-        transform: translateX(15px);
+        transform: translateX(10px);
     }
 }
