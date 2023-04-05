@@ -5,6 +5,17 @@
     border-radius: 50%;
     box-shadow: 1px 1px 20px #151628;
     transition: 0.2s;
+    position: relative;
+}
+
+.circle-wrap::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 1px 1px 25px #151628;
+    transition: 0.2s;
 }
 
 .circle-wrap .circle .mask,
@@ -21,14 +32,14 @@
 
 .circle-wrap .circle .mask .fill {
     clip: rect(0px, 50px, 100px, 0px);
-    background-color: #f0a818;
+    background-color: #F5A11B;
 }
 
 .circle-wrap .inside-circle {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background: #232F3E;
+    background: #28282f;
     line-height: 80px;
     text-align: center;
     margin-top: 10px;
@@ -41,6 +52,78 @@
 
 @media (hover: hover) {
     .circle-wrap:hover {
-        transform: scale(1.1);
+        transform: scale(1.05);
+    }
+
+    .circle-wrap:hover::after{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width : 850px) {
+    .circle-wrap {
+        width: 85px;
+        height: 85px;
+    }
+
+    .circle-wrap .circle .mask,
+    .circle-wrap .circle .fill {
+        width: 85px;
+        height: 85px;
+    }
+
+    .circle-wrap .circle .mask {
+        clip: rect(0px, 85px, 85px, 45px);
+    }
+
+    .circle-wrap .circle .mask .fill {
+        clip: rect(0px, 45px, 85px, 0px);
+        background-color: #F5A11B;
+    }
+    
+    .circle-wrap .inside-circle {
+        width: 65px;
+        height: 65px;
+        line-height: 65px;
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width : 650px) {
+    .circle-wrap {
+        width: 75px;
+        height: 75px;
+    }
+
+    .circle-wrap .circle .mask,
+    .circle-wrap .circle .fill {
+        width: 75px;
+        height: 75px;
+    }
+
+    .circle-wrap .circle .mask {
+        clip: rect(0px, 75px, 75px, 35px);
+    }
+
+    .circle-wrap .circle .mask .fill {
+        clip: rect(0px, 35px, 75px, 0px);
+        background-color: #F5A11B;
+    }
+    
+    .circle-wrap .inside-circle {
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .slick-dots{
+        bottom: -45px !important;
     }
 }

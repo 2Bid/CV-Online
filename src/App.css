@@ -3,8 +3,8 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: rgba(38, 39, 40);
-  color: #e3e5eb !important;
+  background-image: linear-gradient(to bottom right,#17171b 0,#28282f);
+  color: #fdfdf9;
   font-family: Montserrat;
 }
 

@@ -29,7 +29,12 @@ export default function BackSide({isBackside}) {
       <div className='projects__section'>
         <h2>Mes projets</h2>
         <div className="projects__container">
-          <Carousel />
+          {
+            backsideRef.current ?
+            <Carousel/>
+            :
+            <></>
+          }
         </div>
       </div>
     </div>

@@ -4,7 +4,6 @@ import './skillCircle.css'
 export const SkillCircle = forwardRef(({name, percentage}, ref) => {
 
     let style
-    console.log(ref.current)
 
     if(ref.current){
         const styleSheet = document.styleSheets[0];

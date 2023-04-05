@@ -2,6 +2,21 @@
     display: flex;
 }
 
+.cardSide__left,
+.cardSide__right {
+  height: 100%;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.cardSide__right {
+  width: 55%;
+}
+
+.cardSide__left {
+  width: 45%;
+}
+
 /**************   LEFT SIDE   ***************/ 
 
 .info__container{
@@ -22,20 +37,35 @@ h3 {
     aspect-ratio: 1;
     border-radius: 50%;
     margin-right: 10px;
-    overflow: hidden;
-    box-shadow: 1px 1px 20px #151628;
+    box-shadow: 0px 0px 10px #151628;
     transition: 0.3s;
+    position: relative;
+}
+
+.img__container::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0px 0px 15px #151628;
+    transition: 0.2s;
 }
 
 .img__container img {
     width: 100%;
     height: 100%;
+    border-radius: 50%;
     object-fit: cover;
 }
 
 @media (hover: hover) {
     .img__container:hover {
-        transform: scale(1.1);
+        transform: scale(1.075);
+    }
+
+    .img__container:hover::after{
+        opacity: 1;
     }
 }
 
@@ -95,32 +125,33 @@ h3 {
 
 @media (hover: hover) {
     .social__item:hover {
-        color: #f0a818;
+        color: #F5A11B;
     }
 
-    .social__item:hover svg path {
-        fill: #f0a818;
+    /* .social__item svg path {
+        fill: #F5A11B;
     }
-    /* contact svg */
-    .social__item:nth-child(3):hover svg path{
+    
+    /* contact svg 
+    .social__item:nth-child(3) svg path{
         fill: #20213b;
     }
 
-    .social__item:nth-child(3):hover svg path:nth-child(2),
-    .social__item:nth-child(3):hover svg rect{
-        fill: #f0a818;
+    .social__item:nth-child(3) svg path:nth-child(2),
+    .social__item:nth-child(3) svg rect{
+        fill: #F5A11B;
     }
 
-    /* tel svg */
-    .social__item:last-child:hover svg path:nth-child(3),
-    .social__item:last-child:hover svg path:nth-child(6),
-    .social__item:last-child:hover svg path:nth-child(7){
+    /* tel svg 
+    .social__item:last-child svg path:nth-child(3),
+    .social__item:last-child svg path:nth-child(6),
+    .social__item:last-child svg path:nth-child(7){
         fill: #20213b;
     }
 
-    .social__item:last-child:hover svg path:nth-child(2){
-        fill: #f0a818;
-    }
+    .social__item:last-child svg path:nth-child(2){
+        fill: #F5A11B;
+    } */
 }
 
 /* SKILLS */
@@ -132,17 +163,32 @@ h3 {
 }
 
 .skills {
-    background-color: #f0a818;
-    color: #20213b;
+    background-color: #28282f;
+    color: #fff;
     padding: 5px 10px;
-    border-radius: 15px;
-    box-shadow: 1px 1px 20px #151628;
+    border-radius: 14px;
+    box-shadow: 1px 1px 5px #151628;
     transition: 0.1s;
+    position: relative;
+}
+
+.skills::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 15px;
+    opacity: 0;
+    box-shadow: 1px 1px 10px #151628;
+    transition: 0.2s;
 }
 
 @media (hover: hover) {
     .skills:hover {
-        transform: scale(1.025);
+        transform: scale(1.020);
+    }
+
+    .skills:hover::after{
+        opacity: 1;
     }
 }
 
@@ -159,6 +205,58 @@ h2 {
 
 /**************   RESPONSIVE  ***************/
 
-@media screen and (max-width : 1500px) {
-    
+@media screen and (max-width : 900px) {
+    .cardSide__front {
+        flex-direction: column;
+    }
+
+    .img__container{
+        width: 15%;
+        margin-right: 30px;
+    }
+
+    .social__container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .social__item {
+        width: 50%;
+    }
+
+    .social__container .social__item:nth-child(even){
+        justify-content: end;
+    }
+
+    .cardSide__right, .cardSide__left{
+        width: 100%;
+        overflow: auto;
+    }
+
+    .cardSide__left {
+        border-bottom:  5px solid #232F3E;
+        margin-bottom: 5px;
+        position: relative;
+    }
+
+    .cardSide__left::after{
+        content: "";
+        position: fixed;
+        bottom: 50%;
+        left: 0;
+        right: 0;
+        border-bottom: 1px solid;
+
+    }
+
+    .cardSide__right{
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .social__item{
+        width: 100%;
+        justify-content: start !important;
+    }
 }
