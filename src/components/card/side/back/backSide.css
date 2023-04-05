@@ -37,6 +37,8 @@
     padding: 0 20px;
 }
 
+/* Responsive */
+
 @media screen and (max-width : 900px) {
     .cardSide__back {
         gap: 70px;

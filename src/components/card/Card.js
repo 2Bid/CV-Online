@@ -18,9 +18,9 @@ function Card({flip, resetPos}) {
 
   return (
     <div className="card__container">
-      <FrontSide/>
-      <BackSide isBackside={isBackside}/>
-      <FlipArrow reverse={reverse}/>
+		<FrontSide/>
+		<BackSide isBackside={isBackside}/>
+		<FlipArrow reverse={reverse}/>
     </div>
   );
 }

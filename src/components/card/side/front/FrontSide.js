@@ -21,16 +21,19 @@ export default function FrontSide() {
                     <p>Développeur front Junior</p>
                 </div>
                 <div className='img__container'>
-                    <img src="https://codeur-production.s3.eu-west-3.amazonaws.com/9fvfd23bpmzmab438qughbqj9jv6" alt="pp"/>
+                    <img src="https://codeur-production.s3.eu-west-3.amazonaws.com/9fvfd23bpmzmab438qughbqj9jv6" alt="Axel Salenbier"/>
                 </div>
             </div>
+
             <p className='text-content'>Le front-end n'est pas seulement un métier numérique, pour moi c'est aussi un art</p>
+
             <div className='social__container'>
                 <SocialLink name='LinkedIn' link='https://www.linkedin.com/in/axel-salenbier-906130186/' svg={LinkedIn} />
                 <SocialLink name='Github' link='https://github.com/2Bid' svg={Github} />
                 <SocialLink name='salenbieraxel@gmail.com' link='mailto:salenbieraxel@gmail.com' svg={Mail} />
                 <SocialLink name='07 69 89 07 82' link='tel:+33769890782' svg={Phone} />
             </div>
+
             <div className='softskills__container'>
                 <h3>SoftSkill</h3>
                 <div className='skills__container'>
@@ -40,6 +43,7 @@ export default function FrontSide() {
                     <span className='skills'>Bienveillance</span>
                 </div>
             </div>
+
             <div className='hobbies__container'>
                 <h3>Hobbies</h3>
                 <div className='skills__container'>

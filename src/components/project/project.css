@@ -9,7 +9,7 @@
     transition: 1.7s;
 }
 
-.project.active{
+.project.visible{
     opacity: 1;
     visibility: visible;
 }

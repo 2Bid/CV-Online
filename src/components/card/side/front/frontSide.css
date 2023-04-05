@@ -100,60 +100,6 @@ h3 {
     margin-top: 20px;
 }
 
-.social__item {
-    display: flex;
-    gap: 10px;
-    width: fit-content;
-}
-
-.social__item:last-child{
-    gap: 6.5px;
-    left: -4.5px;
-    position: relative;
-}
-
-.social__item svg path,
-.social__item svg rect {
-    transition: 0.2s;
-}
-
-.social__link {
-    text-decoration: none;
-    color: inherit;
-    transition: 0.2s;
-}
-
-@media (hover: hover) {
-    .social__item:hover {
-        color: #F5A11B;
-    }
-
-    /* .social__item svg path {
-        fill: #F5A11B;
-    }
-    
-    /* contact svg 
-    .social__item:nth-child(3) svg path{
-        fill: #20213b;
-    }
-
-    .social__item:nth-child(3) svg path:nth-child(2),
-    .social__item:nth-child(3) svg rect{
-        fill: #F5A11B;
-    }
-
-    /* tel svg 
-    .social__item:last-child svg path:nth-child(3),
-    .social__item:last-child svg path:nth-child(6),
-    .social__item:last-child svg path:nth-child(7){
-        fill: #20213b;
-    }
-
-    .social__item:last-child svg path:nth-child(2){
-        fill: #F5A11B;
-    } */
-}
-
 /* SKILLS */
 
 .skills__container{

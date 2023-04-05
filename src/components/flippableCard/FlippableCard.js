@@ -5,11 +5,13 @@ import Card from '../card/Card';
 import './flippable-card.css';
 
 function FlippableCard({resetPos}) {
+    
     const [showFront, setShowFront] = useState(true);
 
     const flip = () => {
         setShowFront((v) => !v);
     }
+
     return(
         <div className="flippable-card-container">
             <CSSTransition

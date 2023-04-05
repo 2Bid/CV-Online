@@ -43,15 +43,15 @@ export default function GlobalContainer() {
       onMouseMove={(e)=>{handleMouseMove(e)}}
       onMouseOut={()=>handleMouseOut()}
     >
-      <div
-        className='container'
-        ref={ref}
-        style={{
-          transform:`rotateX(${angleX}deg) rotateY(${angleY}deg) scale(1.1)`
-        }}
-      >
-        <FlippableCard resetPos={handleMouseOut}/>
-      </div>
+		<div
+			className='container'
+			ref={ref}
+			style={{
+			transform:`rotateX(${angleX}deg) rotateY(${angleY}deg) scale(1.1)`
+			}}
+		>
+			<FlippableCard resetPos={handleMouseOut}/>
+		</div>
     </div>
   )
 }

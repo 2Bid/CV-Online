@@ -1,0 +1,28 @@
+.social__item {
+    display: flex;
+    gap: 10px;
+    width: fit-content;
+}
+
+.social__item:last-child{
+    gap: 6.5px;
+    left: -4.5px;
+    position: relative;
+}
+
+.social__item svg path,
+.social__item svg rect {
+    transition: 0.2s;
+}
+
+.social__link {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.2s;
+}
+
+@media (hover: hover) {
+    .social__item:hover {
+        color: #F5A11B;
+    }
+}
