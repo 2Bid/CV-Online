@@ -4,7 +4,7 @@ import FrontSide from "./side/front/FrontSide";
 import FlipArrow from "./flipArrow/FlipArrow";
 
 import "./card.css";
-import "./flip-transition.css";
+import "./flipArrow/flip-transition.css";
 
 function Card({flip, resetPos}) {
 
