@@ -4,6 +4,8 @@ import SocialLink from '../../../socialLink/SocialLink'
 
 import "./frontSide.css"
 
+import ProfilPicture from '../../../images/moi.jpg'
+
 /* svg */
 import LinkedIn from '../../../images/svg/linkedIn.svg'
 import Github from '../../../images/svg/github.svg'
@@ -15,17 +17,19 @@ export default function FrontSide() {
   return (
     <div className='cardSide__front'>
         <div className='cardSide__left'>
-            <div className='info__container'>
-                <div className='about__container'>
-                    <h1>Axel Salenbier</h1>
-                    <p>Développeur front Junior</p>
+            <div className='cardSide__left-top'>
+                <div className='info__container'>
+                    <div className='about__container'>
+                        <h1>Axel Salenbier</h1>
+                        <p>Développeur front Junior</p>
+                    </div>
+                    <div className='img__container'>
+                        <img src={ProfilPicture} alt="Axel Salenbier"/>
+                    </div>
                 </div>
-                <div className='img__container'>
-                    <img src="https://codeur-production.s3.eu-west-3.amazonaws.com/9fvfd23bpmzmab438qughbqj9jv6" alt="Axel Salenbier"/>
-                </div>
-            </div>
 
-            <p className='text-content'>Le front-end n'est pas seulement un métier numérique, pour moi c'est aussi un art</p>
+                <p className='text-content'>Le front-end n'est pas seulement un métier numérique, pour moi c'est aussi un art</p>
+            </div>
 
             <div className='social__container'>
                 <SocialLink name='LinkedIn' link='https://www.linkedin.com/in/axel-salenbier-906130186/' svg={LinkedIn} />
@@ -35,24 +39,24 @@ export default function FrontSide() {
             </div>
 
             <div className='softskills__container'>
-                <h3>SoftSkill</h3>
-                <div className='skills__container'>
-                    <span className='skills'>Perséverance</span>
-                    <span className='skills'>Dynamisme</span>
-                    <span className='skills'>Adaptabilité</span>
-                    <span className='skills'>Bienveillance</span>
+                    <h3>SoftSkill</h3>
+                    <div className='skills__container'>
+                        <span className='skills'>Perséverance</span>
+                        <span className='skills'>Dynamisme</span>
+                        <span className='skills'>Adaptabilité</span>
+                        <span className='skills'>Bienveillance</span>
+                    </div>
                 </div>
-            </div>
 
-            <div className='hobbies__container'>
-                <h3>Hobbies</h3>
-                <div className='skills__container'>
-                    <span className='skills'>Musique</span>
-                    <span className='skills'>Nature</span>
-                    <span className='skills'>Snowboard</span>
-                    <span className='skills'>Jeux vidéo</span>
+                <div className='hobbies__container'>
+                    <h3>Hobbies</h3>
+                    <div className='skills__container'>
+                        <span className='skills'>Musique</span>
+                        <span className='skills'>Nature</span>
+                        <span className='skills'>Snowboard</span>
+                        <span className='skills'>Jeux vidéo</span>
+                    </div>
                 </div>
-            </div>
         </div>
 
         <div className='cardSide__right'>
@@ -63,7 +67,7 @@ export default function FrontSide() {
 
             <div className='form__container formation'>
                 <h2>Formations</h2>
-                <ToggleItem title="Développeur front-end Openclassrooms" date="2021-2023" reward="Diplôme rncp de niveau 6 ( BAC +2 )" list={["Choisir une solution technique adaptée à votre client et travailler en mode Agile","Créer des sites webs avec HTML et CSS","Créer des applications web dynamiques avec Javascript et React", "Communiquer avec le back-end de l'application grâce à une API", "Mettre en œuvre des test unitaires et d’intégration et débugger le code", "Résoudre des problèmes techniques avec un langage de programmation et des algorithmes", "Refactoriser du code pour qu’il soit plus moderne et optimisé"]}/>
+                <ToggleItem title="Développeur front-end Openclassrooms" date="2021-2023" reward="Diplôme rncp de niveau 6 ( BAC +3 )" list={["Choisir une solution technique adaptée à votre client et travailler en mode Agile","Créer des sites webs avec HTML et CSS","Créer des applications web dynamiques avec Javascript et React", "Communiquer avec le back-end de l'application grâce à une API", "Mettre en œuvre des test unitaires et d’intégration et débugger le code", "Résoudre des problèmes techniques avec un langage de programmation et des algorithmes", "Refactoriser du code pour qu’il soit plus moderne et optimisé"]}/>
                 <ToggleItem title="Formation React - MikeCodeur" date="2021" list={["Découverte React","Création d'un projet Single Page Application", "Utilisation API"]}/>
                 <ToggleItem title="Formation Développeur Web - Udemy" date="2020" list={["Apprentissage HTML","Connaissances CSS", "Notion Javascript", "Découverte Bootstrap", "Initiation Jquery"]}/>
             </div>

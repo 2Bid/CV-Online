@@ -3,7 +3,7 @@
     height: 100px;
     background: #e6e2e7;
     border-radius: 50%;
-    box-shadow: 1px 1px 20px #151628;
+    box-shadow: 1px 1px 10px #1d1e36;
     transition: 0.2s;
     position: relative;
 }
@@ -14,7 +14,7 @@
     inset: 0;
     border-radius: 50%;
     opacity: 0;
-    box-shadow: 1px 1px 25px #151628;
+    box-shadow: 1px 1px 15px #1d1e36;
     transition: 0.2s;
 }
 

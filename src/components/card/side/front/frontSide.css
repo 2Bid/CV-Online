@@ -15,6 +15,9 @@
 
 .cardSide__left {
   width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /**************   LEFT SIDE   ***************/ 
@@ -27,7 +30,7 @@
 
 h3 {
     width: 100%;
-    margin: 20px 0 10px;
+    margin: 0 0 15px;
 }
 
 /* IMG */
@@ -39,17 +42,8 @@ h3 {
     margin-right: 10px;
     box-shadow: 0px 0px 10px #151628;
     transition: 0.3s;
+    overflow: hidden;
     position: relative;
-}
-
-.img__container::after{
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 50%;
-    opacity: 0;
-    box-shadow: 0px 0px 15px #151628;
-    transition: 0.2s;
 }
 
 .img__container img {
@@ -57,15 +51,12 @@ h3 {
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
+    transition: 0.2s;
 }
 
 @media (hover: hover) {
-    .img__container:hover {
-        transform: scale(1.075);
-    }
-
-    .img__container:hover::after{
-        opacity: 1;
+    .img__container:hover img {
+        transform: scale(1.2);
     }
 }
 
@@ -91,13 +82,7 @@ h3 {
 }
 
 .text-content {
-    margin-top: 10px;
-}
-
-/* SOCIAL */
-
-.social__container{
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 /* SKILLS */
@@ -113,7 +98,7 @@ h3 {
     color: #fff;
     padding: 5px 10px;
     border-radius: 14px;
-    box-shadow: 1px 1px 5px #151628;
+    box-shadow: 0px 0px 5px #1d1e36;
     transition: 0.1s;
     position: relative;
 }
@@ -124,13 +109,17 @@ h3 {
     inset: 0;
     border-radius: 15px;
     opacity: 0;
-    box-shadow: 1px 1px 10px #151628;
+    box-shadow: 0px 0px 7px #1d1e36;
     transition: 0.2s;
+}
+
+.hobbies__container {
+    margin-bottom: 5px;
 }
 
 @media (hover: hover) {
     .skills:hover {
-        transform: scale(1.020);
+        transform: scale(1.010);
     }
 
     .skills:hover::after{
@@ -180,7 +169,6 @@ h2 {
     }
 
     .cardSide__left {
-        border-bottom:  5px solid #232F3E;
         margin-bottom: 5px;
         position: relative;
     }

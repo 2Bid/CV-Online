@@ -1,7 +1,7 @@
 .cardSide__back {
     flex-direction: column;
     overflow: auto;
-    justify-content: start !important;
+    justify-content: space-between !important;
     gap: 30px;
 }
 
@@ -30,6 +30,10 @@
 }
 
 /* Projects */
+
+.projects__section {
+    margin-bottom: 50px;
+}
 
 .projects__container{
     max-width: 900px;

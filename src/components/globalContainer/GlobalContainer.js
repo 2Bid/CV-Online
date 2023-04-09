@@ -47,7 +47,7 @@ export default function GlobalContainer() {
 			className='container'
 			ref={ref}
 			style={{
-			transform:`rotateX(${angleX}deg) rotateY(${angleY}deg) scale(1.1)`
+			transform:`rotateX(${angleX}deg) rotateY(${angleY}deg)`
 			}}
 		>
 			<FlippableCard resetPos={handleMouseOut}/>

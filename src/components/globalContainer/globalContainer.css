@@ -7,8 +7,8 @@
 }
 
 .container {
-    width: 75%;
-    height: 71%;
+    width: 80%;
+    height: 75%;
     max-width: 1100px;
     margin: auto;
     transform: rotateX(20deg) rotateY(20deg);
