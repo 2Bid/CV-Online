@@ -45,12 +45,6 @@
 
 @media screen and (max-width : 900px) {
     .cardSide__back {
-        gap: 70px;
-    }
-}
-
-@media screen and (max-width : 730px) {
-    .cardSide__back {
-        gap: 5px;
+        justify-content: space-around !important;
     }
 }

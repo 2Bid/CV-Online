@@ -22,6 +22,10 @@
 
 /**************   LEFT SIDE   ***************/ 
 
+.exp__section-mobile{
+    display: none;
+}
+
 .info__container{
     display: flex;
     justify-content: space-between;
@@ -163,24 +167,23 @@ h2 {
         justify-content: end;
     }
 
-    .cardSide__right, .cardSide__left{
+    .exp__section-mobile{
+        display: block;
+    }
+
+    .cardSide__right{
+        display: none;
+    }
+
+    .cardSide__left{
         width: 100%;
         overflow: auto;
+        gap: 20px;
     }
 
     .cardSide__left {
         margin-bottom: 5px;
         position: relative;
-    }
-
-    .cardSide__left::after{
-        content: "";
-        position: fixed;
-        bottom: 50%;
-        left: 0;
-        right: 0;
-        border-bottom: 1px solid;
-
     }
 
     .cardSide__right{

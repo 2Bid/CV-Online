@@ -39,24 +39,39 @@ export default function FrontSide() {
             </div>
 
             <div className='softskills__container'>
-                    <h3>SoftSkill</h3>
-                    <div className='skills__container'>
-                        <span className='skills'>Perséverance</span>
-                        <span className='skills'>Dynamisme</span>
-                        <span className='skills'>Adaptabilité</span>
-                        <span className='skills'>Bienveillance</span>
-                    </div>
+                <h3>SoftSkill</h3>
+                <div className='skills__container'>
+                    <span className='skills'>Perséverance</span>
+                    <span className='skills'>Dynamisme</span>
+                    <span className='skills'>Adaptabilité</span>
+                    <span className='skills'>Bienveillance</span>
+                </div>
+            </div>
+
+            <div className='hobbies__container'>
+                <h3>Hobbies</h3>
+                <div className='skills__container'>
+                    <span className='skills'>Musique</span>
+                    <span className='skills'>Nature</span>
+                    <span className='skills'>Snowboard</span>
+                    <span className='skills'>Jeux vidéo</span>
+                </div>
+            </div>
+            
+            {/* MOBILE ONLY  */}
+            <div className='exp__section-mobile'>
+                <div className='exp__container professional'>
+                    <h2>Expériences professionelles</h2>
+                    <ToggleItem active={true} title="HBJO ( Alternance )" date="2021-2023" list={["Développement de parts dans le système","Création et mise à jour des sites clients","Ecriture documentation interne","Intégration de newsletters"]}/>
                 </div>
 
-                <div className='hobbies__container'>
-                    <h3>Hobbies</h3>
-                    <div className='skills__container'>
-                        <span className='skills'>Musique</span>
-                        <span className='skills'>Nature</span>
-                        <span className='skills'>Snowboard</span>
-                        <span className='skills'>Jeux vidéo</span>
-                    </div>
+                <div className='form__container formation'>
+                    <h2>Formations</h2>
+                    <ToggleItem title="Développeur front-end Openclassrooms" date="2021-2023" reward="Diplôme rncp de niveau 6 ( BAC +3 )" list={["Choisir une solution technique adaptée à votre client et travailler en mode Agile","Créer des sites webs avec HTML et CSS","Créer des applications web dynamiques avec Javascript et React", "Communiquer avec le back-end de l'application grâce à une API", "Mettre en œuvre des test unitaires et d’intégration et débugger le code", "Résoudre des problèmes techniques avec un langage de programmation et des algorithmes", "Refactoriser du code pour qu’il soit plus moderne et optimisé"]}/>
+                    <ToggleItem title="Formation React - MikeCodeur" date="2021" list={["Découverte React","Création d'un projet Single Page Application", "Utilisation API"]}/>
+                    <ToggleItem title="Formation Développeur Web - Udemy" date="2020" list={["Apprentissage HTML","Connaissances CSS", "Notion Javascript", "Découverte Bootstrap", "Initiation Jquery"]}/>
                 </div>
+            </div>
         </div>
 
         <div className='cardSide__right'>
