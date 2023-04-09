@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/CV-Online/static/css/main.e5adab75.css",
+    "main.js": "/CV-Online/static/js/main.8e81719c.js",
+    "static/js/787.cb436b89.chunk.js": "/CV-Online/static/js/787.cb436b89.chunk.js",
+    "static/media/moi.jpg": "/CV-Online/static/media/moi.71fe5fd5f960c4808946.jpg",
+    "static/media/reservia.jpg": "/CV-Online/static/media/reservia.404ab10876a3dd174914.jpg",
+    "static/media/Fisheye.jpg": "/CV-Online/static/media/Fisheye.6f48b1907b8374b051d4.jpg",
+    "static/media/kasa.jpg": "/CV-Online/static/media/kasa.8a22e2e2981422ba4ade.jpg",
+    "static/media/GameOn.jpg": "/CV-Online/static/media/GameOn.ea445208881d952ddaa6.jpg",
+    "static/media/gamepreview.jpg": "/CV-Online/static/media/gamepreview.9ca936e87835e4d86bcf.jpg",
+    "static/media/omf.jpg": "/CV-Online/static/media/omf.d733d76db6dd6c86df7c.jpg",
+    "static/media/argentbank.jpg": "/CV-Online/static/media/argentbank.71e518b49537452a3679.jpg",
+    "static/media/plats.jpg": "/CV-Online/static/media/plats.dbf0abbf946e7d659011.jpg",
+    "static/media/sportsee.jpg": "/CV-Online/static/media/sportsee.5aaa99cbfd532da83bb8.jpg",
+    "static/media/Billedapp.jpg": "/CV-Online/static/media/Billedapp.1f854c09de235f460635.jpg",
+    "static/media/datepicker.jpg": "/CV-Online/static/media/datepicker.275d853cf0f3fbbc379e.jpg",
+    "static/media/slick.svg": "/CV-Online/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/CV-Online/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/CV-Online/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/phone.svg": "/CV-Online/static/media/phone.136cb5a903d98ccce2e7f44932effba5.svg",
+    "static/media/github.svg": "/CV-Online/static/media/github.b8fc32a935f15a093c939968957bf729.svg",
+    "static/media/slick.woff": "/CV-Online/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/CV-Online/index.html",
+    "static/media/linkedIn.svg": "/CV-Online/static/media/linkedIn.df2b08340c03b75be613a7c757bf9eef.svg",
+    "static/media/mail.svg": "/CV-Online/static/media/mail.976bf9b59f91884c68a5d6628845854f.svg",
+    "main.e5adab75.css.map": "/CV-Online/static/css/main.e5adab75.css.map",
+    "main.8e81719c.js.map": "/CV-Online/static/js/main.8e81719c.js.map",
+    "787.cb436b89.chunk.js.map": "/CV-Online/static/js/787.cb436b89.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e5adab75.css",
+    "static/js/main.8e81719c.js"
+  ]
+}
