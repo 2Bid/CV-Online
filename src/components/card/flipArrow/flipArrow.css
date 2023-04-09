@@ -1,5 +1,6 @@
 .flipArrow{
     position: absolute;
+    z-index: 9;
     right: 0;
     transition: 0.2s;
     transform-origin: right top;

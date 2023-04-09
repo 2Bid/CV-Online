@@ -107,3 +107,10 @@
         max-height: 250px;
     }
 }
+
+
+@media screen and (max-width: 495px) {
+    .exp__container .toggle__item:first-of-type .toggle__content{
+        height: 151px;
+    }
+}

@@ -1,5 +1,6 @@
 .cardSide__front {
     display: flex;
+    z-index: 1;
 }
 
 .cardSide__left,
@@ -195,5 +196,17 @@ h2 {
     .social__item{
         width: 100%;
         justify-content: start !important;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .info__container{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .img__container {
+        width: 25%;
     }
 }

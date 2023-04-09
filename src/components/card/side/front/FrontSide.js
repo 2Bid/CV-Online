@@ -74,6 +74,7 @@ export default function FrontSide() {
             </div>
         </div>
 
+        {/* DESKTOP ONLY  */}
         <div className='cardSide__right'>
             <div className='exp__container professional'>
                 <h2>Expériences professionelles</h2>
