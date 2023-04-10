@@ -1,6 +1,17 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .social__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 10px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 }
 
@@ -13,12 +24,16 @@
 .social__item svg path,
 .social__item svg rect {
     transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
 }
 
 .social__link {
     text-decoration: none;
     color: inherit;
     transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
 }
 
 @media (hover: hover) {

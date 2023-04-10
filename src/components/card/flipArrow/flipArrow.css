@@ -1,14 +1,27 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .flipArrow{
     position: absolute;
     z-index: 9;
     right: 0;
     transition: 0.2s;
-    transform-origin: right top;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    -webkit-transform-origin: right top;
+        -ms-transform-origin: right top;
+            transform-origin: right top;
     cursor: pointer;
 }
 
 @media (hover: hover) {
     .flipArrow:hover{
-        transform: scale(1.10);
+        -webkit-transform: scale(1.10);
+            -ms-transform: scale(1.10);
+                transform: scale(1.10);
     }
 }

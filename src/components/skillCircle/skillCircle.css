@@ -1,10 +1,20 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .circle-wrap {
     width: 100px;
     height: 100px;
     background: #e6e2e7;
     border-radius: 50%;
-    box-shadow: 1px 1px 10px #1d1e36;
+    -webkit-box-shadow: 1px 1px 10px #1d1e36;
+            box-shadow: 1px 1px 10px #1d1e36;
     transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
     position: relative;
 }
 
@@ -14,8 +24,11 @@
     inset: 0;
     border-radius: 50%;
     opacity: 0;
-    box-shadow: 1px 1px 15px #1d1e36;
+    -webkit-box-shadow: 1px 1px 15px #1d1e36;
+            box-shadow: 1px 1px 15px #1d1e36;
     transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
 }
 
 .circle-wrap .circle .mask,
@@ -52,7 +65,9 @@
 
 @media (hover: hover) {
     .circle-wrap:hover {
-        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+                transform: scale(1.05);
     }
 
     .circle-wrap:hover::after{

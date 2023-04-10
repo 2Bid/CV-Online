@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .exp__container .toggle__item:first-of-type .toggle__content{
     height: 135px;
 }
@@ -11,8 +18,11 @@
     cursor: pointer;
     background-color: #28282f;
     transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     border-radius: 25px;
-    box-shadow: 0px 0px 5px #1d1e36;
+    -webkit-box-shadow: 0px 0px 5px #1d1e36;
+            box-shadow: 0px 0px 5px #1d1e36;
     position: relative;
 }
 
@@ -23,8 +33,11 @@
     z-index: -1;
     border-radius: 25px;
     opacity: 0;
-    box-shadow: 0px 0px 7px #1d1e36;
+    -webkit-box-shadow: 0px 0px 7px #1d1e36;
+            box-shadow: 0px 0px 7px #1d1e36;
     transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
 }
 
 .toggle__item.active{
@@ -41,6 +54,8 @@
 .toggle__title {
     pointer-events: none;
     transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
 }
 
 .toggle__content-container{
@@ -58,12 +73,17 @@
 
 .toggle__content-container::-webkit-scrollbar-thumb {
     background: #f1f1f1;
+    -webkit-transition: 0.1s;
     transition: 0.1s;
 }
 
 .toggle__content {
     height: 0;
+    -webkit-transition: height 0.4s;
+    -o-transition: height 0.4s;
     transition: height 0.4s;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
     overflow: hidden;
     pointer-events: none;
     padding-right: 10px;
