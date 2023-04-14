@@ -65,7 +65,8 @@ export default function Carousel() {
     <Slider {...settings}>
       {
         projects.map((project)=>{
-          return project
+          const projectItem = <li className="project__container" key={project}>{project}</li>
+          return projectItem
         })
       }      
     </Slider>
