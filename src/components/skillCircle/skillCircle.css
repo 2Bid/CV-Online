@@ -75,7 +75,7 @@
     }
 }
 
-@media screen and (max-width : 850px) {
+@media screen and (max-width : 750px) {
     .circle-wrap {
         width: 85px;
         height: 85px;
@@ -106,7 +106,7 @@
     }
 }
 
-@media screen and (max-width : 650px) {
+@media screen and (max-width: 550px) {
     .circle-wrap {
         width: 75px;
         height: 75px;
@@ -135,9 +135,7 @@
         margin-left: 10px;
         font-size: 1em;
     }
-}
 
-@media screen and (max-width: 550px) {
     .slick-dots{
         bottom: -45px !important;
     }
