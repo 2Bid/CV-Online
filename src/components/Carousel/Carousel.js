@@ -29,7 +29,7 @@ export default function Carousel() {
     slidesToScroll: 3,
     responsive: [
       {
-        breakpoint: 850,
+        breakpoint: 900,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2

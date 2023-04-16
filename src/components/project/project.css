@@ -5,12 +5,19 @@
 * Browsers: last 4 version
 */
 
-.project{
-    display: block;
+.project__container{
     position: relative;
-    margin: 0 10px;
     height: 100%;
     border-radius: 5px;
+    overflow: hidden;
+    aspect-ratio: 2 / 1;
+}
+
+.project{
+    display: block;
+    margin: 0 10px;
+    position: relative;
+    height: 100%;
     opacity: 0;
     visibility: hidden;
     transition: 1.7s;
@@ -40,13 +47,13 @@
     background-color: rgba(0, 0, 0, 0.85);
     padding: 10px 20px;
     color: #e3e5eb;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .project__title {
     color: #F5A11B;
     text-align: center;
-    font-size: 17px;
+    margin-bottom: 15px;
 }
 
 .project__description{
@@ -86,8 +93,6 @@
 .project__img{
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
     -o-object-position: top left;
        object-position: top left;
 }
@@ -95,5 +100,27 @@
 @media (hover: hover) {
     .project:hover .project__content{
         opacity: 1;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .project__content{
+        position: relative;
+        opacity: 1;
+        background-color: transparent;
+    }
+    
+    .project.visible{
+        overflow-y: auto;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .project {
+        margin: 0;
+    }
+    
+    .project__title {
+        margin-bottom: 10px;
     }
 }
