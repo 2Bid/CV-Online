@@ -9,6 +9,7 @@
     position: absolute;
     z-index: 9;
     right: 0;
+    top: 0;
     transition: 0.2s;
     -webkit-transition: 0.2s;
     -o-transition: 0.2s;
@@ -23,5 +24,15 @@
         -webkit-transform: scale(1.10);
             -ms-transform: scale(1.10);
                 transform: scale(1.10);
+    }
+}
+
+@media screen and (max-width:900px) {
+    .flipArrow{
+        right: 50%;
+        -webkit-transform: translateX(50%);
+            -ms-transform: translateX(50%);
+                transform: translateX(50%);
+        top: -42px;
     }
 }

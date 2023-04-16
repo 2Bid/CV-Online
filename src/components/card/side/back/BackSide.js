@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, {useEffect, useRef } from 'react'
 import { SkillCircle } from './../../../skillCircle/SkillCircle'
 import Carousel from '../../../Carousel/Carousel'
 
@@ -14,9 +14,15 @@ export default function BackSide({isBackside}) {
     }
   },[isBackside])
 
+  const style = {
+    zIndex: {
+     zIndex : isBackside ? 1 : null
+    }
+  };
+
   return (
-    <div className='cardSide__back'>
-      <div className='hardskills__section'>
+    <main className='cardSide__back' style={style.zIndex}>
+      <section className='hardskills__section'>
         <h2>HardSkills</h2>
         <div className="hardskills__container">
           <SkillCircle name="HTML" percentage={95} ref={backsideRef}/>
@@ -25,10 +31,10 @@ export default function BackSide({isBackside}) {
           <SkillCircle name="React" percentage={70} ref={backsideRef}/>
           <SkillCircle name="SEO" percentage={60} ref={backsideRef}/>
         </div>
-      </div>
+      </section>
 
-      <div className='projects__section'>
-        <h2>Mes projets</h2>
+      <section className='projects__section'>
+        <h2>Projets</h2>
         <div className="projects__container">
           {
             backsideRef.current ?
@@ -37,7 +43,7 @@ export default function BackSide({isBackside}) {
             <></>
           }
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   )
 }

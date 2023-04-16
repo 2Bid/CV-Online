@@ -11,9 +11,11 @@
         -ms-flex-direction: column;
             flex-direction: column;
     overflow: auto;
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+    max-height: 500px;
+    margin: auto 0;
     gap: 30px;
 }
 
@@ -48,10 +50,6 @@
 
 /* Projects */
 
-.projects__section {
-    margin-bottom: 50px;
-}
-
 .projects__container{
     max-width: 900px;
     margin: -10px auto 0;
@@ -60,9 +58,16 @@
 
 /* Responsive */
 
-@media screen and (max-width : 900px) {
-    .cardSide__back {
-        -ms-flex-pack: distribute !important;
-            justify-content: space-around !important;
+@media screen and (max-width : 900px) {    
+    .cardSide__back{
+        max-height: 900px;
+    }
+    
+    .hardskills__section {
+        padding: 0 40px;
+    }
+
+    .projects__section{
+        padding: 0 10px;
     }
 }

@@ -20,8 +20,9 @@
 
 .container {
     width: 80%;
-    height: 75%;
     max-width: 1100px;
+    height: 75%;
+    max-height: 620px;
     margin: auto;
     -webkit-transform: rotateX(20deg) rotateY(20deg);
             transform: rotateX(20deg) rotateY(20deg);
@@ -39,16 +40,17 @@
 @media screen and (max-width: 900px) {
     .container {
         height: 85%;
+        max-height: none;
     }
 }
 
 @media screen and (max-width: 600px) {
     .container {
-        width: 90%;
-        height: 95%;
+        width: 95%;
+        height: 90%;
     }
 
     .cardSide__left, .cardSide__right {
-        padding: 15px;
+        padding: 5px;
     }
 }
