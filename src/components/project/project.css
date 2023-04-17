@@ -19,6 +19,7 @@
     position: relative;
     height: 100%;
     opacity: 0;
+    text-decoration: none;
     visibility: hidden;
     transition: 1.7s;
     -webkit-transition: 1.7s;

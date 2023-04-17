@@ -67,19 +67,19 @@ h3 {
 }
 
 h4 {
-  font-size: clamp(1rem,1.2vw,1.18rem);
+  font-size: clamp(0.95rem,1vw,1.1rem);
 }
 
 h5 {
-  font-size: clamp(0.9rem,1.2vw,1.15rem);
+  font-size: clamp(0.9rem,1vw,1.1rem);
 }
 
 h6 {
-  font-size: clamp(0.9rem,1.2vw,1.1rem);
+  font-size: clamp(0.9rem,1vw,1.1rem);
 }
 
 p, span, a, li {
-  font-size: clamp(0.9rem,1.2vw,1.05rem);
+  font-size: clamp(0.9rem,1vw,1.05rem);
 }
 
 ::-webkit-scrollbar {
