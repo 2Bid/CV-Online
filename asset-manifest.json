@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/CV-Online/static/css/main.eddffdd5.css",
-    "main.js": "/CV-Online/static/js/main.884194c9.js",
+    "main.css": "/CV-Online/static/css/main.82778c7d.css",
+    "main.js": "/CV-Online/static/js/main.5c4761cf.js",
     "static/js/787.cb436b89.chunk.js": "/CV-Online/static/js/787.cb436b89.chunk.js",
     "static/media/moi.jpg": "/CV-Online/static/media/moi.71fe5fd5f960c4808946.jpg",
     "static/media/kasa.jpg": "/CV-Online/static/media/kasa.663164c902a9fb13775d.jpg",
@@ -24,12 +24,12 @@
     "index.html": "/CV-Online/index.html",
     "static/media/linkedIn.svg": "/CV-Online/static/media/linkedIn.df2b08340c03b75be613a7c757bf9eef.svg",
     "static/media/mail.svg": "/CV-Online/static/media/mail.976bf9b59f91884c68a5d6628845854f.svg",
-    "main.eddffdd5.css.map": "/CV-Online/static/css/main.eddffdd5.css.map",
-    "main.884194c9.js.map": "/CV-Online/static/js/main.884194c9.js.map",
+    "main.82778c7d.css.map": "/CV-Online/static/css/main.82778c7d.css.map",
+    "main.5c4761cf.js.map": "/CV-Online/static/js/main.5c4761cf.js.map",
     "787.cb436b89.chunk.js.map": "/CV-Online/static/js/787.cb436b89.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eddffdd5.css",
-    "static/js/main.884194c9.js"
+    "static/css/main.82778c7d.css",
+    "static/js/main.5c4761cf.js"
   ]
 }
