@@ -151,6 +151,7 @@
     -o-transition: 0.1s;
     transition: 0.1s;
     position: relative;
+    will-change: transform;
 }
 
 .skills::after{
